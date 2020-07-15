@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: url("futuristic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 50px
+  width: auto;
+  padding: 5px;
+  margin: auto;
+  margin-left: 20px;
+}
+
+/* For making the Navigation Bar fixed */
+ol {
+  position: sticky; # For making the navigation bar b/t relative and fixed
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 20;
+  width: 100%;
+}
+
+/* Keeping all the elements to left and border for elements */
+li{
+  display: block;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+/* Right aligning About */
+li:last-child {
+  border-right: none
+}
+
+/* Adding the block for the elements */
+
+
+/* Changing the colour when hovering */
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+/* Changing the colour for active Page */
+.dactive {
+  background-color: #555555;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.pcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: left;
+  text-align: center;
+  float:left;
+}
+
+.prcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: right;
+  text-align: center;
+  float:right;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a.scard {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 76%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 24%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Main Image */
+.mainimage {
+  width: 65%;
+  padding: 20px;
+}
+
+/* Centering the images */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 20px;
+}
+/* 2nd image */
+.img2 {
+  width: 100%;
+  height: 65px;
+  padding: 5px;
+}
+
+.img3 {
+  float: left
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .footer{
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 12px;
+  text-align: center;
+  background: #4CAF50;
+  margin-top: 15px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+
+}
+/*you guys add your photos in the respective id !!!!(img tag provided in html)*/
+i-1,i-2,i-3 {
+    padding-left: 20px;
+    margin-left: 100px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+i-1,i-2,i-3{
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/* social icons*/
+.social{
+  text-align: center;
+  justify-content: center;
+  color:black;
+}
