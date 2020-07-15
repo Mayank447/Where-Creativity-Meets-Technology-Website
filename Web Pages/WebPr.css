@@ -1,36 +1,3 @@
-/* <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-</style>
-*/
-
-/*body {
-  background-color: MediumSeaGreen;
-  opacity: 0.6;
-}
-*/
-
 * {
   box-sizing: border-box;
 }
@@ -43,7 +10,7 @@ li a:hover {
   background-size: cover;
 }
 
-h1 {
+h1.head {
   color: white;
   font-size: 50px
   width: auto;
@@ -52,23 +19,26 @@ h1 {
   margin-left: 20px;
 }
 
+
 /* For making the Navigation Bar fixed */
 ol {
-  position: sticky; # For making the navigation bar b/t relative and fixed
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  top: 20;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 /* Keeping all the elements to left and border for elements */
-li{
+li.headerl{
   display: block;
   float: left;
   border-right: 1px solid #bbb;
+  position: sticky;
+  top: 0;
 }
 
 /* Right aligning About */
@@ -77,7 +47,7 @@ li:last-child {
 }
 
 /* Adding the block for the elements */
-a {
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -85,6 +55,13 @@ a {
   text-decoration: none;
 }
 
+.int{
+  color: DodgerBlue;
+  font-size: 20px;
+  text-align:left;
+  text-decoration: none;
+  line-height: 1.8;
+}
 /* Changing the colour when hovering */
 li a:hover {
   background-color: #111;
@@ -100,80 +77,69 @@ li a:hover {
   background-color: #4CAF50;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
+/* Create three unequal columns that floats next to each other */
+.column {
+  background-color: #ddd;
   float: left;
-  width: 76%;
+  padding: 10px;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 24%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
+/* Left and right column */
+.column.side {
+  width: 20%;
 }
 
-/* Main Image */
-.mainimage {
-  width: 65%;
-  padding: 20px;
+/* Middle column */
+.column.middle {
+  width: 75%;
 }
 
-/* Centering the images */
-.center{
+/* Last Column*/
+.column.last {
+  width: 5%;
+}
+
+.lindex{
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
+  position: sticky;
+  top: 46px;
+}
+
+.cardl {
+  background-color: white;
   padding: 20px;
-}
-/* 2nd image */
-.img2 {
-  width: 100%;
-  height: 65px;
-  padding: 5px;
+  margin-top: 15px;
 }
 
-.img3 {
-  float: left
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 15px;
 }
 
-.card2 {
-  background-color: white;
-  padding: 20px;
-  margin-top: 5px;
-}
-
 /* Clear floats after the columns */
 .row:after {
+  background-color: white;
   content: "";
   display: table;
   clear: both;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+.mainresize{
+  width: 45%;
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
 }
+
+.nav{
+  position: sticky;
+  top: 0;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -202,6 +168,9 @@ li a:hover {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
+  position: sticky;
+  left:250px
+  bottom: 0
 }
 
 footer {
@@ -227,14 +196,3 @@ i-1,i-2,i-3{
   justify-content: center;
   color:black;
 }
-
-/* p{
-  width: auto;
-  padding: 5px;
-  margin: auto;
-  border-style: groove;
-  text-decoration-color: navy;
-  margin-left: 20px;
-  border: 10px solid DodgerBlue;
-  border-radius:2px;
-} */
